@@ -1,5 +1,6 @@
 plugins {
-    kotlin("jvm") version "2.2.0"
+    alias(libs.plugins.kotlin.jvm)
+    alias(libs.plugins.buildconfig)
 }
 
 group = "io.github.momosetkn"
@@ -10,7 +11,7 @@ repositories {
 }
 
 dependencies {
-    testImplementation(kotlin("test"))
+    testImplementation(libs.kotlin.test)
 }
 
 tasks.test {
@@ -18,4 +19,14 @@ tasks.test {
 }
 kotlin {
     jvmToolchain(17)
+}
+
+buildConfig {
+    packageName("com.example.build")
+    // "postgres:15.8" を定数化
+    buildConfigField(
+        "String",
+        "POSTGRES_IMAGE",
+        "\"postgres:${libs.versions.containerImage.postgres.get()}\""
+    )
 }

@@ -1,0 +1,12 @@
+[versions]
+kotlin = "2.2.0"
+junit = "5.10.0"
+buildconfig = "5.4.0"
+containerImage-postgres = "postgres:15.8"
+
+[libraries]
+kotlin-test = { module = "org.jetbrains.kotlin:kotlin-test", version.ref = "kotlin" }
+
+[plugins]
+kotlin-jvm = { id = "org.jetbrains.kotlin.jvm", version.ref = "kotlin" }
+buildconfig = { id = "com.github.gmazzo.buildconfig", version.ref = "buildconfig" }
