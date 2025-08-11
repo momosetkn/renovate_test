@@ -27,6 +27,6 @@ buildConfig {
     buildConfigField(
         "String",
         "POSTGRES_IMAGE",
-        "\"postgres:${libs.versions.containerImage.postgres.get()}\""
+        "\"${libs.versions.containerImage.postgres.get()}\""
     )
 }
