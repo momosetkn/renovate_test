@@ -1,6 +1,7 @@
 plugins {
     alias(libs.plugins.kotlin.jvm)
     alias(libs.plugins.buildconfig)
+    application
 }
 
 group = "io.github.momosetkn"
@@ -29,4 +30,8 @@ buildConfig {
         "POSTGRES_IMAGE",
         "\"${libs.versions.containerImage.postgres.get()}\""
     )
+}
+
+application {
+    mainClass.set("io.github.momosetkn.MainKt")
 }
