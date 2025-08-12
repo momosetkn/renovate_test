@@ -3,6 +3,7 @@
   "extends": [
     "config:recommended"
   ],
+  "pep621": { "enabled": false },
   "customManagers": [
     {
       "customType": "regex",
