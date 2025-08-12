@@ -1,3 +1,5 @@
+val containerImagePostgres = project.properties["containerImage.postgres"] as String
+
 plugins {
     alias(libs.plugins.kotlin.jvm)
     alias(libs.plugins.buildconfig)
@@ -28,7 +30,7 @@ buildConfig {
     buildConfigField(
         "String",
         "POSTGRES_IMAGE",
-        "\"${libs.versions.containerImage.postgres.get()}\""
+        "\"$containerImagePostgres\""
     )
 }
 
