@@ -1,0 +1,24 @@
+[project]
+name = "renovate_test"
+version = "0.1.0"
+description = "test for renovate"
+authors = [
+    {name = "momosetkn"}
+]
+readme = "README.md"
+requires-python = ">=3.12, <3.13"
+dependencies = [
+    "beautifulsoup4 (>=4.13.4,<5.0.0)",
+    "chromedriver-binary (>=140.0.7339.2.0,<140.1.0.0.0)",
+    "flake8 (>=7.2.0,<8.0.0)",
+    "mypy (>=1.16.1,<2.0.0)",
+    "pydantic (>=2.11.7,<3.0.0)",
+    "pydantic-settings (>=2.9.1,<3.0.0)",
+]
+
+[tool.poetry]
+package-mode = false
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
