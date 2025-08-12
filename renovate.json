@@ -4,6 +4,7 @@
     "config:recommended"
   ],
   "pep621": { "enabled": false },
+  "poetry": { "enabled": true },
   "customManagers": [
     {
       "customType": "regex",
