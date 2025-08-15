@@ -21,6 +21,13 @@
         "org.jetbrains.kotlin",
         "com.google.devtools.ksp"
       ]
+    },{
+      "groupName": "Liquibase",
+      "matchManagers": ["gradle"],
+      "matchPackagePatterns": [
+        "org.liquibase:liquibase-core",
+        "io.github.momosetkn:liquibase-kotlin-starter-script"
+      ]
     }
   ]
 }
