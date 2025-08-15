@@ -1,5 +1,6 @@
 [versions]
 kotlin = "2.2.0"
+ksp = "2.2.0-2.0.2"
 junit = "5.10.0"
 buildconfig = "5.6.7"
 # docker container image
@@ -12,3 +13,4 @@ kotlin-test = { module = "org.jetbrains.kotlin:kotlin-test", version.ref = "kotl
 [plugins]
 kotlin-jvm = { id = "org.jetbrains.kotlin.jvm", version.ref = "kotlin" }
 buildconfig = { id = "com.github.gmazzo.buildconfig", version.ref = "buildconfig" }
+ksp = { id = "com.google.devtools.ksp", version.ref = "ksp" }
