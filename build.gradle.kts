@@ -9,6 +9,17 @@ plugins {
 group = "io.github.momosetkn"
 version = "1.0-SNAPSHOT"
 
+// check ksp version
+run {
+    val kotlinVersion = libs.versions.kotlin.get()
+    val kspVersion = libs.versions.ksp.get()
+    val kotlinPartInKsp = kspVersion.split("-")[0]
+
+    check(kotlinPartInKsp == kotlinVersion) {
+        "KSP version mismatch: expected $kotlinVersion-<suffix>, but was $kspVersion"
+    }
+}
+
 repositories {
     mavenCentral()
 }
