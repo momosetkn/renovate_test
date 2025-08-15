@@ -6,8 +6,8 @@ buildconfig = "5.6.7"
 # docker container image
 # should be start-with `containerImage-`
 #containerImage-postgres = "postgres:15.8"
-liquibase = "4.33.0"
-liquibaseKotlin = "4.33.0-0.10.1"
+liquibase = "4.32.0"
+liquibaseKotlin = "4.32.0-0.10.0"
 
 [libraries]
 kotlin-test = { module = "org.jetbrains.kotlin:kotlin-test", version.ref = "kotlin" }
