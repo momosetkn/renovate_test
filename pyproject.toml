@@ -6,7 +6,7 @@ authors = [
     {name = "momosetkn"}
 ]
 readme = "README.md"
-requires-python = ">=3.12, <3.13"
+requires-python = ">=3.13, <3.14"
 dependencies = [
     "beautifulsoup4 (>=4.13.4,<5.0.0)",
     "chromedriver-binary (>=140.0.7339.2.0,<140.1.0.0.0)",
