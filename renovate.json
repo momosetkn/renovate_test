@@ -11,6 +11,14 @@
         "containerImage\\.[a-z0-9-_]+\\s*=\\s*(?<depName>[a-z0-9-_/]+):(?<currentValue>[a-zA-Z0-9._-]+)"
       ],
       "datasourceTemplate": "docker"
+    },
+    {
+      "customType": "regex",
+      "managerFilePatterns": ["ecspresso/images\\.libsonnet"],
+      "matchStrings": [
+        ":\\s*\"(?<depName>[a-z0-9-_/]+):(?<currentValue>[a-zA-Z0-9._-]+)\""
+      ],
+      "datasourceTemplate": "docker"
     }
   ],
   "packageRules": [
