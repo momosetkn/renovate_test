@@ -1,3 +1,3 @@
 {
-  "hogehogeImage": "selenium/standalone-chrome:130.0"
+  "hogehogeImage": "selenium/standalone-chrome:139.0"
 }
