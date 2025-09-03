@@ -37,13 +37,13 @@ lxml = ["lxml"]
 
 [[package]]
 name = "chromedriver-binary"
-version = "140.0.7339.6.0"
+version = "141.0.7390.2.0"
 description = "Installer for chromedriver."
 optional = false
 python-versions = "*"
 groups = ["main"]
 files = [
-    {file = "chromedriver_binary-140.0.7339.6.0.tar.gz", hash = "sha256:f51127febe73f6ec49dc84a71b314d8d5224f4cce056c85883ab7fe4bad00d08"},
+    {file = "chromedriver_binary-141.0.7390.2.0.tar.gz", hash = "sha256:79a448f27e07d43e93014c8cdbb02d71160e3b62bd308cf39d8e999e2cedf4f8"},
 ]
 
 [[package]]
@@ -398,4 +398,4 @@ typing-extensions = ">=4.12.0"
 [metadata]
 lock-version = "2.1"
 python-versions = ">=3.12, <3.13"
-content-hash = "c44895a79ec13fdd9d0f73757a584a3e7d07328686052fd1ebd66e9232f82a50"
+content-hash = "efa964f5ddad59b55810c8738f5a379f9b00413e7ea95eb1c7cdd5c24a0aebe1"
