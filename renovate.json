@@ -26,7 +26,7 @@
         "/\\.ts$/"
       ],
       "matchStrings": [
-        "//\\s*renovate:\\s*datasource=docker\\s*\\nconst\\s+[\\W\\w]+\\s*=\\s*['\"](?<depName>[^:'\"]+):(?<currentValue>[^'\"]+)['\"];"
+        "\\s*//\\s*renovate:\\s*datasource=docker\\s*\\n\\s*const\\s+[\\W\\w]+\\s*=\\s*['\"](?<depName>[^:'\"]+):(?<currentValue>[^'\"]+)['\"];"
       ],
       "datasourceTemplate": "docker"
     }
