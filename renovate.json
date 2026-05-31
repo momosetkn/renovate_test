@@ -36,6 +36,16 @@
         "org.liquibase:liquibase-core",
         "io.github.momosetkn:liquibase-kotlin-starter-script"
       ]
+    },
+    {
+      "customType": "regex",
+      "managerFilePatterns": [
+        "/\\.ts$/"
+      ],
+      "matchStrings": [
+        "//\\s*renovate:\\s*datasource=docker\\s*\\nconst\\s+RUBY_BASE_IMAGE\\s*=\\s*['\"](?<depName>[^:'\"]+):(?<currentValue>[^'\"]+)['\"];"
+      ],
+      "datasourceTemplate": "docker"
     }
   ]
 }
