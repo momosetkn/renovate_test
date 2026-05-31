@@ -19,6 +19,16 @@
         ":\\s*\"(?<depName>[a-z0-9-_/]+):(?<currentValue>[a-zA-Z0-9._-]+)\""
       ],
       "datasourceTemplate": "docker"
+    },
+    {
+      "customType": "regex",
+      "managerFilePatterns": [
+        "/\\.ts$/"
+      ],
+      "matchStrings": [
+        "//\\s*renovate:\\s*datasource=docker\\s*\\nconst\\s+RUBY_BASE_IMAGE\\s*=\\s*['\"](?<depName>[^:'\"]+):(?<currentValue>[^'\"]+)['\"];"
+      ],
+      "datasourceTemplate": "docker"
     }
   ],
   "packageRules": [
@@ -36,16 +46,6 @@
         "org.liquibase:liquibase-core",
         "io.github.momosetkn:liquibase-kotlin-starter-script"
       ]
-    },
-    {
-      "customType": "regex",
-      "managerFilePatterns": [
-        "/\\.ts$/"
-      ],
-      "matchStrings": [
-        "//\\s*renovate:\\s*datasource=docker\\s*\\nconst\\s+RUBY_BASE_IMAGE\\s*=\\s*['\"](?<depName>[^:'\"]+):(?<currentValue>[^'\"]+)['\"];"
-      ],
-      "datasourceTemplate": "docker"
     }
   ]
 }
